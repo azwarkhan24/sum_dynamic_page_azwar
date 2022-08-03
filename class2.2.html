@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Input</title>
+</head>
+<body style="list-style-type: none;background-image: url('https://images.pexels.com/photos/268966/pexels-photo-268966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');background-repeat: no-repeat;background-size: cover ;margin:0px">
+	<div style="padding-left: 500px; padding-top: 200px;">
+<div style="font-family: sans-serif; font-weight: lighter; width: max-content ;border:0.5px solid black; box-shadow: 1px 1px 1px 1px; background-color: grey; padding: 20px; border-radius: 5px;">	
+1st Number<input type="text" id="firstnumber" name="sum" placeholder="enter number" style="margin-left: 10px; border-radius: 5px; "><br><br>
+2nd Number<input type="text" id="secondnumber" name="sum" placeholder="enter number" style="margin-left:7px; border-radius:5px;"><br><br>
+<button onclick="sum()"  style="background-color:lightblue; cursor: pointer; border-color: black; border-radius:5px;">SUM</button>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+</div>
+</div>
+<script type="text/javascript">
+	function sum(){
+  var num1= parseInt(document.getElementById("firstnumber").value);
+	var num2= parseInt(document.getElementById("secondnumber").value);
+	document.getElementById("result").innerHTML=num1+num2;
+	}
+</script>
+</body>
+</html>
